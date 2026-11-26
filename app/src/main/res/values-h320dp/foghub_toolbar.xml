@@ -1,0 +1,7 @@
+<resources>
+    <!-- Allow for four 65dp buttons, the landscape top padding and system insets. -->
+    <style name="FogHubLandscapePlacement">
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_below">@id/manuallyAddPc</item>
+    </style>
+</resources>

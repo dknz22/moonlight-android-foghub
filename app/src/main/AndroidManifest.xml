@@ -144,6 +144,14 @@
             <meta-data android:name="WindowManagerPreference:FreeformWindowOrientation" android:value="landscape" />
         </activity>
         <activity
+            android:name=".foghub.FogHubActivity"
+            android:exported="false"
+            android:enableOnBackInvokedCallback="true"
+            android:label="@string/foghub_account"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            android:configChanges="orientation|screenSize|smallestScreenSize|keyboard|keyboardHidden|screenLayout" />
+        <activity
             android:name=".Game"
             android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|screenLayout|fontScale|uiMode|orientation|screenSize|smallestScreenSize|layoutDirection"
             android:noHistory="true"

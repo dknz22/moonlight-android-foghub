@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="foghub_account">FogHub account</string>
+    <string name="foghub_sign_in">Sign in</string>
+    <string name="foghub_sign_in_title">Sign in to FogHub</string>
+    <string name="foghub_registered">Account created</string>
+    <string name="foghub_code">Confirmation code</string>
+    <string name="foghub_verify">Confirm</string>
+    <string name="foghub_code_sent">Enter the code from Telegram or VK.</string>
+    <string name="foghub_code_expired">The code has expired. Sign in again to get a new one.</string>
+    <string name="foghub_balance">Balance: %1$s</string>
+    <string name="foghub_refresh">Refresh profile</string>
+    <string name="foghub_sign_out">Sign out on this device</string>
+    <string name="foghub_retry">Try again</string>
+    <string name="foghub_request_failed">Couldn’t reach FogHub. Check your connection and try again.</string>
+    <string name="foghub_invalid_response">FogHub returned an unexpected response. Try again later.</string>
+    <string name="foghub_storage_error">Couldn’t access the saved sign-in on this device.</string>
+</resources>

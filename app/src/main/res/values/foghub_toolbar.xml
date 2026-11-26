@@ -1,0 +1,11 @@
+<resources>
+    <!-- Reserve a second row or column when four full-size controls do not fit. -->
+    <style name="FogHubPortraitPlacement">
+        <item name="android:layout_alignParentStart">true</item>
+        <item name="android:layout_below">@id/settingsButton</item>
+    </style>
+    <style name="FogHubLandscapePlacement">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_toEndOf">@id/settingsButton</item>
+    </style>
+</resources>

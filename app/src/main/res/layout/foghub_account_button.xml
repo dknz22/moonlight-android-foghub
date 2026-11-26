@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/foghubAccount"
+    style="?android:attr/borderlessButtonStyle"
+    android:layout_width="70dp"
+    android:layout_height="65dp"
+    android:scaleType="fitCenter"
+    android:src="@drawable/ic_foghub"
+    android:contentDescription="@string/foghub_account"
+    android:tooltipText="@string/foghub_account" />

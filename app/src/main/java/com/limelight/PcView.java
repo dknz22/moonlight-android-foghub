@@ -8,6 +8,7 @@ import com.limelight.binding.PlatformBinding;
 import com.limelight.binding.crypto.AndroidCryptoProvider;
 import com.limelight.computers.ComputerManagerListener;
 import com.limelight.computers.ComputerManagerService;
+import com.limelight.foghub.FogHubActivity;
 import com.limelight.grid.PcGridAdapter;
 import com.limelight.grid.assets.DiskAssetLoader;
 import com.limelight.nvstream.http.ComputerDetails;
@@ -140,6 +141,8 @@ public class PcView extends Activity implements AdapterFragmentCallbacks {
         ImageButton settingsButton = findViewById(R.id.settingsButton);
         ImageButton addComputerButton = findViewById(R.id.manuallyAddPc);
         ImageButton helpButton = findViewById(R.id.helpButton);
+        findViewById(R.id.foghubAccount).setOnClickListener(v ->
+                startActivity(new Intent(this, FogHubActivity.class)));
 
         settingsButton.setOnClickListener(new OnClickListener() {
             @Override

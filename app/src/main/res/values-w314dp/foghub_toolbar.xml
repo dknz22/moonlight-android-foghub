@@ -1,0 +1,7 @@
+<resources>
+    <!-- Allow for four 70dp buttons, TV overscan padding (15dp per side) and pixel rounding. -->
+    <style name="FogHubPortraitPlacement">
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_toEndOf">@id/helpButton</item>
+    </style>
+</resources>
