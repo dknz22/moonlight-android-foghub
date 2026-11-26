@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="foghub_register">Создать аккаунт</string>
+    <string name="foghub_recover">Восстановить пароль</string>
+    <string name="foghub_edit_profile">Редактировать профиль</string>
+    <string name="foghub_notifications">Уведомления</string>
+    <string name="foghub_login_label">Логин</string>
+    <string name="foghub_password">Пароль</string>
+    <string name="foghub_new_password">Новый пароль</string>
+    <string name="foghub_optional_password">Новый пароль (необязательно)</string>
+    <string name="foghub_optional_details">Необязательные сведения</string>
+    <string name="foghub_referral">Реферальный код или промоник</string>
+    <string name="foghub_contact">Контакты</string>
+    <string name="foghub_region">ID региона</string>
+    <string name="foghub_only_fh">Скрывать МТС Fogplay</string>
+    <string name="foghub_terms">Прочитать условия регистрации</string>
+    <string name="foghub_agree">Я принимаю пользовательское соглашение, оферту и политику обработки персональных данных FogHub.</string>
+    <string name="foghub_agree_required">Для регистрации примите правила.</string>
+    <string name="foghub_recovery_help">Ссылка для сброса пароля придёт в привязанный аккаунт Telegram или VK.</string>
+    <string name="foghub_send_link">Отправить ссылку</string>
+    <string name="foghub_link_sent">Проверьте сообщения в Telegram или VK.</string>
+    <string name="foghub_enter_token">Ввести ссылку или токен</string>
+    <string name="foghub_token_or_link">Ссылка или токен для сброса</string>
+    <string name="foghub_link_missing_token">Вставьте токен из сообщения о восстановлении пароля.</string>
+    <string name="foghub_set_password">Задать новый пароль</string>
+    <string name="foghub_password_changed">Пароль изменён.</string>
+    <string name="foghub_return_login">Вернуться ко входу</string>
+    <string name="foghub_resume">Включить «Продолжить» в Moonlight</string>
+    <string name="foghub_with_2fa">Запрашивать код входа, если привязан Telegram или VK</string>
+    <string name="foghub_background_left">Текст левого блока фона</string>
+    <string name="foghub_background_right">Текст правого блока фона</string>
+    <string name="foghub_cashback">Кэшбэк</string>
+    <string name="foghub_cashback_regular">Кэшбэк для постоянных игроков</string>
+    <string name="foghub_interval">Интервал обновления плагина (минуты)</string>
+    <string name="foghub_save_changes">Сохранить изменения</string>
+    <string name="foghub_notify_favorite_pc">Избранные ПК</string>
+    <string name="foghub_notify_favorite_game">Избранные игры</string>
+    <string name="foghub_notify_save">Проверка сохранений</string>
+    <string name="foghub_notify_cloud_save">Облачные сохранения</string>
+    <string name="foghub_notify_session">Начало и конец сеансов</string>
+    <string name="foghub_notify_pc_offline">Проверка отправки статуса ПК на FogHub</string>
+    <string name="foghub_field_required">Заполните поле.</string>
+    <string name="foghub_password_length">Введите от 8 до 20 символов.</string>
+    <string name="foghub_text_limit">Допустимо до %1$d символов.</string>
+    <string name="foghub_integer_required">Введите целое число.</string>
+    <string name="foghub_number_range">Введите число от %1$d до %2$d.</string>
+</resources>

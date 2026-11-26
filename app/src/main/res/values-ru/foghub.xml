@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="foghub_account">Аккаунт FogHub</string>
+    <string name="foghub_sign_in">Войти</string>
+    <string name="foghub_sign_in_title">Вход в FogHub</string>
+    <string name="foghub_registered">Аккаунт создан</string>
+    <string name="foghub_code">Код подтверждения</string>
+    <string name="foghub_verify">Подтвердить</string>
+    <string name="foghub_code_sent">Введите код из Telegram или VK.</string>
+    <string name="foghub_code_expired">Срок действия кода истёк. Войдите ещё раз, чтобы получить новый код.</string>
+    <string name="foghub_balance">Баланс: %1$s</string>
+    <string name="foghub_refresh">Обновить профиль</string>
+    <string name="foghub_sign_out">Выйти на этом устройстве</string>
+    <string name="foghub_retry">Повторить</string>
+    <string name="foghub_request_failed">Не удалось связаться с FogHub. Проверьте подключение и попробуйте ещё раз.</string>
+    <string name="foghub_invalid_response">FogHub вернул неожиданный ответ. Попробуйте позже.</string>
+    <string name="foghub_storage_error">Не удалось получить доступ к сохранённому входу на этом устройстве.</string>
+</resources>

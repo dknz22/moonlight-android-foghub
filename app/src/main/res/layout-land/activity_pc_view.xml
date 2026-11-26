@@ -14,8 +14,8 @@
         android:gravity="center"
         android:layout_alignParentBottom="true"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/settingsButton"
-        android:layout_toEndOf="@+id/settingsButton">
+        android:layout_toRightOf="@id/foghubAccount"
+        android:layout_toEndOf="@id/foghubAccount">
 
         <RelativeLayout
             android:id="@+id/no_pc_found_layout"
@@ -80,5 +80,10 @@
         android:layout_below="@id/helpButton"
         android:src="@drawable/ic_add"
         style="?android:attr/borderlessButtonStyle"/>
+
+    <include layout="@layout/foghub_account_button"
+        style="@style/FogHubLandscapePlacement"
+        android:layout_width="70dp"
+        android:layout_height="65dp" />
 
 </RelativeLayout>

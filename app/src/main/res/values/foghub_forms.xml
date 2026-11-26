@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="foghub_register">Create account</string>
+    <string name="foghub_recover">Reset password</string>
+    <string name="foghub_edit_profile">Edit profile</string>
+    <string name="foghub_notifications">Notifications</string>
+    <string name="foghub_login_label">Username</string>
+    <string name="foghub_password">Password</string>
+    <string name="foghub_new_password">New password</string>
+    <string name="foghub_optional_password">New password (optional)</string>
+    <string name="foghub_optional_details">Optional details</string>
+    <string name="foghub_referral">Referral code or promo nickname</string>
+    <string name="foghub_contact">Contact details</string>
+    <string name="foghub_region">Region ID</string>
+    <string name="foghub_only_fh">Hide MTS Fogplay</string>
+    <string name="foghub_terms">Read registration terms</string>
+    <string name="foghub_agree">I accept the FogHub user agreement, offer, and personal data policy.</string>
+    <string name="foghub_agree_required">Accept the rules to create an account.</string>
+    <string name="foghub_recovery_help">FogHub sends a password reset link to the Telegram or VK account linked to your profile.</string>
+    <string name="foghub_send_link">Send reset link</string>
+    <string name="foghub_link_sent">Check Telegram or VK for the reset link.</string>
+    <string name="foghub_enter_token">Use a reset link or token</string>
+    <string name="foghub_token_or_link">Reset link or token</string>
+    <string name="foghub_link_missing_token">Paste the reset token from your recovery message.</string>
+    <string name="foghub_set_password">Set new password</string>
+    <string name="foghub_password_changed">Your password has been changed.</string>
+    <string name="foghub_return_login">Return to sign in</string>
+    <string name="foghub_resume">Enable Resume in Moonlight</string>
+    <string name="foghub_with_2fa">Require a sign-in code when Telegram or VK is linked</string>
+    <string name="foghub_background_left">Left background text</string>
+    <string name="foghub_background_right">Right background text</string>
+    <string name="foghub_cashback">Cashback</string>
+    <string name="foghub_cashback_regular">Cashback for regular players</string>
+    <string name="foghub_interval">Plugin refresh interval (minutes)</string>
+    <string name="foghub_save_changes">Save changes</string>
+    <string name="foghub_notify_favorite_pc">Favorite PCs</string>
+    <string name="foghub_notify_favorite_game">Favorite games</string>
+    <string name="foghub_notify_save">Save checks</string>
+    <string name="foghub_notify_cloud_save">Cloud saves</string>
+    <string name="foghub_notify_session">Session starts and ends</string>
+    <string name="foghub_notify_pc_offline">PC status reports to FogHub</string>
+    <string name="foghub_field_required">Enter a value.</string>
+    <string name="foghub_password_length">Use 8 to 20 characters.</string>
+    <string name="foghub_text_limit">Use up to %1$d characters.</string>
+    <string name="foghub_integer_required">Enter a whole number.</string>
+    <string name="foghub_number_range">Enter a number from %1$d to %2$d.</string>
+</resources>

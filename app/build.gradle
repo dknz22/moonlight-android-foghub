@@ -149,5 +149,9 @@ dependencies {
     implementation 'org.jmdns:jmdns:3.6.3'
     implementation 'com.github.cgutman:ShieldControllerExtensions:1.0.1'
 
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'com.vaadin.external.google:android-json:0.0.20131108.vaadin1'
+    testImplementation 'com.squareup.okhttp3:mockwebserver3:5.5.0'
+
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:2.1.5'
 }
