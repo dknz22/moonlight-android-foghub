@@ -45,8 +45,7 @@ final class FogHubForms {
             return true;
         });
         activity.note(activity.getString(R.string.foghub_optional_details));
-        form.text("referral", R.string.foghub_referral, Integer.MAX_VALUE);
-        form.text("contact", R.string.foghub_contact, Integer.MAX_VALUE);
+        form.input("referral", R.string.foghub_referral, TEXT, text -> text.isEmpty() ? JSONObject.NULL : text);
         form.region();
         form.check("only_fh", R.string.foghub_only_fh, true);
         form.submit(R.string.foghub_register, body -> activity.signIn(FogHubApi.Endpoint.REGISTER, body));
@@ -98,16 +97,11 @@ final class FogHubForms {
     void editProfile(JSONObject user) {
         activity.page(Page.EDIT, activity::profile);
         Form form = new Form(user);
-        form.text("contact", R.string.foghub_contact, 2000);
         form.region();
         form.check("resume", R.string.foghub_resume);
         form.check("only_fh", R.string.foghub_only_fh);
         form.check("with_2fa", R.string.foghub_with_2fa);
-        form.text("background_block1", R.string.foghub_background_left, 120);
-        form.text("background_block2", R.string.foghub_background_right, 120);
-        form.number("hourback", R.string.foghub_cashback, false, 0, 20);
-        form.number("hourback_regular", R.string.foghub_cashback_regular, true, 0, 30);
-        form.number("interval", R.string.foghub_interval, false, Long.MIN_VALUE, Long.MAX_VALUE);
+        form.number("interval", R.string.foghub_interval, false);
         form.password(R.string.foghub_optional_password);
         form.submit(R.string.foghub_save_changes, body -> {
             if (body.length() == 0) {
@@ -136,8 +130,8 @@ final class FogHubForms {
         });
     }
 
-    private IllegalArgumentException invalid(int message, Object... args) {
-        return new IllegalArgumentException(activity.getString(message, args));
+    private IllegalArgumentException invalid(int message) {
+        return new IllegalArgumentException(activity.getString(message));
     }
 
     private String required(String value) {
@@ -215,38 +209,24 @@ final class FogHubForms {
             });
         }
 
-        void text(String key, int label, int limit) {
-            input(key, label, TEXT, text -> {
-                if (text.codePointCount(0, text.length()) > limit) {
-                    throw invalid(R.string.foghub_text_limit, limit);
-                }
-                return text.isEmpty() ? JSONObject.NULL : text;
-            });
-        }
-
         void region() {
-            number("region", R.string.foghub_region, true, Long.MIN_VALUE, Long.MAX_VALUE);
+            number("region", R.string.foghub_region, true);
         }
 
-        void number(String key, int label, boolean nullable, long min, long max) {
+        void number(String key, int label, boolean nullable) {
             EditText field = input(key, label, TEXT, text -> {
                 String digits = text.trim();
                 if (nullable && digits.isEmpty()) {
                     return JSONObject.NULL;
                 }
-                long number;
                 try {
-                    number = Long.parseLong(required(digits));
+                    return Long.parseLong(required(digits));
                 } catch (NumberFormatException e) {
                     throw invalid(R.string.foghub_integer_required);
                 }
-                if (number < min || number > max) {
-                    throw invalid(R.string.foghub_number_range, min, max);
-                }
-                return number;
             });
             // A numeric key listener silently strips characters from pasted values (e.g. "1.5" becomes "15").
-            field.setRawInputType(InputType.TYPE_CLASS_NUMBER | (min < 0 ? InputType.TYPE_NUMBER_FLAG_SIGNED : 0));
+            field.setRawInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_SIGNED);
         }
 
         void check(String key, int label) {

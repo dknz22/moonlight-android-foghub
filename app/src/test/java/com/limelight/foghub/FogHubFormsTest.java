@@ -12,15 +12,12 @@ import static org.junit.Assert.assertSame;
 import static org.junit.Assert.assertThrows;
 
 public class FogHubFormsTest {
-    private static final Function<String, Object> OPTIONAL_TEXT = text ->
-            text.isEmpty() ? JSONObject.NULL : text;
-
     @Test
-    public void clearingAnExistingValueIsDifferentFromLeavingAnOptionalFieldBlank() {
-        assertSame(JSONObject.NULL, submittedValue("old contact", "", OPTIONAL_TEXT));
-        assertNull(submittedValue(null, "", OPTIONAL_TEXT));
-        assertNull(submittedValue("", "", OPTIONAL_TEXT));
-        assertEquals(" new contact ", submittedValue("old contact", " new contact ", OPTIONAL_TEXT));
+    public void clearingASelectedRegionIsDifferentFromLeavingItBlank() {
+        Function<String, Object> region = text -> text.isEmpty() ? JSONObject.NULL : Long.parseLong(text);
+        assertSame(JSONObject.NULL, submittedValue("2", "", region));
+        assertNull(submittedValue(null, "", region));
+        assertNull(submittedValue("", "", region));
     }
 
     @Test
