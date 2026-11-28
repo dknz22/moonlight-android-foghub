@@ -77,16 +77,16 @@ public class FogHubApiTest {
     @Test
     public void patchPreservesExplicitNullFalseAndUtf8InSnapshotOfChangedFields() throws Exception {
         JSONObject changes = new JSONObject()
-                .put("contact", "Привет")
+                .put("password", "пароль-тест")
                 .put("region", JSONObject.NULL)
                 .put("resume", false);
         Request request = api.call(UPDATE, "account", changes).request();
-        changes.put("hourback", 12);
+        changes.put("interval", 12);
         Buffer buffer = new Buffer();
         request.body().writeTo(buffer);
         JSONObject sent = new JSONObject(buffer.readUtf8());
         assertEquals(3, sent.length());
-        assertEquals("Привет", sent.getString("contact"));
+        assertEquals("пароль-тест", sent.getString("password"));
         assertSame(JSONObject.NULL, sent.get("region"));
         assertEquals(Boolean.FALSE, sent.get("resume"));
     }

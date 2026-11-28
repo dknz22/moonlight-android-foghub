@@ -10,7 +10,6 @@
     <string name="foghub_optional_password">New password (optional)</string>
     <string name="foghub_optional_details">Optional details</string>
     <string name="foghub_referral">Referral code or promo nickname</string>
-    <string name="foghub_contact">Contact details</string>
     <string name="foghub_region">Region ID</string>
     <string name="foghub_only_fh">Hide MTS Fogplay</string>
     <string name="foghub_terms">Read registration terms</string>
@@ -27,10 +26,6 @@
     <string name="foghub_return_login">Return to sign in</string>
     <string name="foghub_resume">Enable Resume in Moonlight</string>
     <string name="foghub_with_2fa">Require a sign-in code when Telegram or VK is linked</string>
-    <string name="foghub_background_left">Left background text</string>
-    <string name="foghub_background_right">Right background text</string>
-    <string name="foghub_cashback">Cashback</string>
-    <string name="foghub_cashback_regular">Cashback for regular players</string>
     <string name="foghub_interval">Plugin refresh interval (minutes)</string>
     <string name="foghub_save_changes">Save changes</string>
     <string name="foghub_notify_favorite_pc">Favorite PCs</string>
@@ -41,7 +36,5 @@
     <string name="foghub_notify_pc_offline">PC status reports to FogHub</string>
     <string name="foghub_field_required">Enter a value.</string>
     <string name="foghub_password_length">Use 8 to 20 characters.</string>
-    <string name="foghub_text_limit">Use up to %1$d characters.</string>
     <string name="foghub_integer_required">Enter a whole number.</string>
-    <string name="foghub_number_range">Enter a number from %1$d to %2$d.</string>
 </resources>
